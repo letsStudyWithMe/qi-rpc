@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: qi-rpc-core
+
+rpc.name: 栖
+rpc.version: 1.0
+rpc.serverHost: localhost
+rpc.serverPort: 8080

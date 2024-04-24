@@ -1,10 +1,10 @@
-package com.qi.qirpc.easy.server;
+package com.qi.qirpc.core.server;
 
-import com.qi.qirpc.easy.model.RpcRequest;
-import com.qi.qirpc.easy.model.RpcResponse;
-import com.qi.qirpc.easy.registry.LocalRegistry;
-import com.qi.qirpc.easy.serializer.JdkSerializer;
-import com.qi.qirpc.easy.serializer.Serializer;
+import com.qi.qirpc.core.model.RpcRequest;
+import com.qi.qirpc.core.model.RpcResponse;
+import com.qi.qirpc.core.registry.LocalRegistry;
+import com.qi.qirpc.core.serializer.JdkSerializer;
+import com.qi.qirpc.core.serializer.Serializer;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;

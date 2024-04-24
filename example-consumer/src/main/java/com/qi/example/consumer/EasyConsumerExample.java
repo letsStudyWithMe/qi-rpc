@@ -3,7 +3,7 @@ package com.qi.example.consumer;
 
 import com.qi.example.common.model.User;
 import com.qi.example.common.service.UserService;
-import com.qi.qirpc.easy.proxy.ServiceProxyFactory;
+import com.qi.qirpc.core.proxy.ServiceProxyFactory;
 
 public class EasyConsumerExample {
 

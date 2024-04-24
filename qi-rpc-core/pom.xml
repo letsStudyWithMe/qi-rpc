@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qi</groupId>
-	<artifactId>example-provider</artifactId>
+	<artifactId>qi-rpc-core</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>example-provider</name>
-	<description>example-provider</description>
+	<name>qi-rpc-core</name>
+	<description>qi-rpc-core</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -21,11 +21,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.qi</groupId>
-			<artifactId>qi-rpc-core</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 		<dependency>
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
@@ -37,14 +33,25 @@
 			<version>1.18.30</version>
 		</dependency>
 		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-core</artifactId>
+			<version>4.5.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.qi</groupId>
-			<artifactId>example-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.4.11</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
 
