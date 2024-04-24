@@ -30,7 +30,7 @@ public class RpcApplication {
         if (rpcConfig == null) {
             synchronized (RpcApplication.class) {
                 if (rpcConfig == null) {
-                    rpcConfig = new RpcConfig();
+                    init();
                 }
             }
         }
