@@ -1,5 +1,6 @@
 package com.qi.qirpc.core.config;
 
+import com.qi.qirpc.core.constant.SerializerKeys;
 import lombok.Data;
 
 @Data
@@ -28,4 +29,9 @@ public class RpcConfig {
      * 模拟调用开关
      */
     private boolean mock = false;
+
+    /**
+     * 服务器端口号
+     */
+    private String serializer = SerializerKeys.JDK;
 }
