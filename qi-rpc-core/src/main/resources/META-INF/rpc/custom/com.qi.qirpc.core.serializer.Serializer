@@ -1,0 +1,3 @@
+hessian=com.qi.qirpc.core.serializer.HessianSerializer
+json=com.qi.qirpc.core.serializer.JsonSerializer
+kryo=com.qi.qirpc.core.serializer.KryoSerializer

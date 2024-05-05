@@ -1,26 +1,18 @@
 package com.qi.qirpc.core.serializer;
 
 import com.qi.qirpc.core.constant.SerializerKeys;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.qi.qirpc.core.spi.SpiLoader;
 
 public class SerializerFactory {
 
-    /**
-     * 序列化映射
-     */
-    private static final Map<String,Serializer> SERIALIZER_MAP = new HashMap<>(){{
-        put(SerializerKeys.JDK,new JdkSerializer());
-        put(SerializerKeys.JSON,new JsonSerializer());
-        put(SerializerKeys.KRYO,new KryoSerializer());
-        put(SerializerKeys.HESSIAN,new HessianSerializer());
-    }};
+    static{
+        SpiLoader.load(Serializer.class);
+    }
 
     /**
      * 默认的序列化器
      */
-    private static final Serializer DEFAULT_SERIALIZER = SERIALIZER_MAP.get(SerializerKeys.JDK);
+    private static final Serializer DEFAULT_SERIALIZER = SpiLoader.getInstance(Serializer.class, SerializerKeys.JDK);
 
     /**
      * 获取序列化器
@@ -28,6 +20,6 @@ public class SerializerFactory {
      * @return
      */
     public static Serializer getInstance(String key){
-        return SERIALIZER_MAP.get(key);
+        return SpiLoader.getInstance(Serializer.class, key);
     }
 }

@@ -28,7 +28,12 @@
 			<artifactId>hutool-all</artifactId>
 			<version>5.8.16</version>
 		</dependency>
-
+		<!--etcd客户端依赖-->
+		<dependency>
+			<groupId>io.etcd</groupId>
+			<artifactId>jetcd-core</artifactId>
+			<version>0.7.7</version>
+		</dependency>
 		<!--序列化-hessian-->
 		<dependency>
 			<groupId>com.caucho</groupId>

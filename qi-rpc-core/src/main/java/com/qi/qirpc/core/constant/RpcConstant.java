@@ -6,11 +6,15 @@ package com.qi.qirpc.core.constant;
 public interface RpcConstant {
     String DEFAULT_CONFIG_PREFIX = "rpc";
 
-    String DEFAULT_CONFIG_TYPE_YML = "yml";
+    String DEFAULT_APPLICATION_PREFIX = "application";
 
-    String DEFAULT_CONFIG_TYPE_PROPERTIES = "properties";
+    String DEFAULT_APPLICATION_TYPE_DEV = "dev";
 
-    String DEFAULT_CONFIG_TYPE_YAML = "yaml";
+    String DEFAULT_APPLICATION_TYPE_PROD = "prod";
+
+    String DEFAULT_APPLICATION_TYPE_TEST = "test";
 
     String DEFAULT_CONFIG_FILE = "application.";
+
+    String DEFAULT_SERVICE_VERSION = "1.0";
 }
